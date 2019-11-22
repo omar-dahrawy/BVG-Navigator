@@ -1,0 +1,215 @@
+U1
+S+U Warschauer Str.:0
+U Schlesisches Tor:2
+U Görlitzer Bahnhof:4
+U Kottbusser Tor:5
+U Prinzenstr.:7
+U Hallesches Tor:9
+U Möckernbrücke:11
+U Gleisdreieck:12
+U Kurfürstenstr.:14
+U Nollendorfplatz:16
+U Wittenbergplatz:18
+U Kurfürstendamm:19
+U Uhlandstr.:20
+U2
+S+U Pankow:0
+U Vinetastr.:1
+S+U Schönhauser Allee:3
+U Eberswalder Str.:5
+U Senefelderplatz:7
+U Rosa-Luxemburg-Platz:9
+S+U Alexanderplatz:11
+U Kloster str.:13
+U Märkisches Museum:14
+U Spittelmarkt:16
+U Hausvogteiplatz:18
+U Stadtmitte:20
+U Mohrenstr.:21
+S+U Potsdamer Platz:22
+U Mendelssohn-Bartholdy-Park:24
+U Gleisdreieck:25
+U Bülowstr.:27
+U Nollendorfplatz:29
+U Wittenbergplatz:30
+S+U Zoologischer Garten:33
+U Ernst-Reuter-Platz:34
+U Deutsche Oper:36
+U Bismarckstr.:37
+U Sophie-Charlotte-Platz:39
+U Kaiserdamm:40
+U Theodor-Heuss-Platz:42
+U Neu-Westend:44
+U Olympia-Stadion:45
+U Ruhleben:47
+U3
+S+U Warschauer Str.:0
+U Schlesisches Tor:2
+U Görlitzer Bahnhof:4
+U Kottbusser Tor:5
+U Prinzenstr.:7
+U Hallesches Tor:9
+U Möckernbrücke:11
+U Gleisdreieck:12
+U Kurfürstenstr.:14
+U Nollendorfplatz:16
+U Wittenbergplatz:18
+U Augsburger Str.:20
+U Spichernstr.:21
+U Hohenzollernplatz:23
+U Fehrbelliner Platz:24
+S+U Heidelberger Platz:26
+U Rüdesheimer Platz:28
+U Breitenbachplatz:29
+U Podbielskiallee:31
+U Dahlem-Dorf:32
+U Freie Universität (Thielplatz):34
+U Oskar-Helene-Heim:36
+U Onkel Toms Hütte:38
+U Krumme Lanke:40
+U4
+U Nollendorfplatz:0
+U Viktoria-Luise-Platz:2
+U Bayerischer Platz:3
+U Rathaus Schöneberg:5
+S+U Innsbrucker Platz:6
+U5
+U Hönow:0
+U Louis-Lewin-Str.:2
+U Hellersdorf:3
+U Cottbusser Platz:5
+U Kienberg (Gärten der Welt):6
+U Kaulsdorf-Nord:8
+S+U Wuhletal:10
+U Elsterwerdaer Platz:12
+U Biesdorf-Süd:14
+U Tierpark:17
+U Friedrichsfelde:19
+S+U Lichtenberg:21
+U Magdalenenstr.:22
+S+U Frankfurter Allee:24
+U Samariterstr.:25
+U Frankfurter Tor:27
+U Weberwiese:28
+U Strausberger Platz:29
+U Schillingstr.:31
+S+U Alexanderplatz:32
+U55
+S+U Brandenburger Tor:0
+U Bundestag:1
+S+U Hauptbahnhof:2
+U6
+U Alt-Tegel:0
+U Borsigwerke:1
+U Holzhauser Str.:3
+U Otisstr.:4
+U Scharnweberstr.:5
+U Kurt-Schumacher-Platz:7
+U Afrikanische Str.:8
+U Rehberge:9
+U Seestr.:11
+U Leopoldplatz:13
+S+U Wedding:14
+U Reinickendorfer Str.:15
+U Schwartzkopffstr.:16
+U Naturkundemuseum:17
+U Oranienburger Tor:19
+S+U Friedrichstr.:20
+U Französische Str.:21
+U Stadtmitte:23
+U Kochstr./Checkpoint Charlie:24
+U Hallesches Tor:25
+U Mehringdamm:27
+U Platz der Luftbrücke:29
+U Paradestr.:30
+S+U Tempelhof:32
+U Alt-Tempelhof:33
+U Kaiserin-Augusta-Str.:34
+U Ullsteinstr.:35
+U Westphalweg:37
+U Alt-Mariendorf:38
+U7
+S+U Rathaus Spandau:0
+U Altstadt Spandau:1
+U Zitadelle:2
+U Haselhorst:4
+U Paulsternstr.:6
+U Rohrdamm:7
+U Siemensdamm:9
+U Halemweg:10
+U Jakob-Kaiser-Platz:11
+S+U Jungfernheide:13
+U Mierendorffplatz:14
+U Richard-Wagner-Platz:16
+U Bismarckstr.:17
+U Wilmersdorfer Str.:18
+U Adenauerplat:20
+U Konstanzer Str.:21
+U Fehrbelliner Platz:22
+U Blissestr.:24
+U Berliner Str.:25
+U Bayerischer Platz:26
+U Eisenacher Str.:27
+U Kleistpark:29
+S+U Yorckstr.:30
+U Möckernbrücke:32
+U Mehringdamm:34
+U Gneisenaustr.:35
+U Südstern:37
+U Hermannplatz:39
+U Rathaus Neukölln:40
+U Karl-Marx-Str.:42
+S+U Neukölln:43
+U Grenzallee:45
+U Blaschkoallee:46
+U Parchimer Allee:48
+U Britz-Süd:49
+U Johannisthaler Chaussee:51
+U Lipschitzallee:52
+U Wutzkyallee:54
+U Zwickauer Damm:55
+U Rudow:56
+U8
+S+U Wittenau:0
+U Rathaus Reinickendorf:1
+S+U Karl-Bonhoeffer-Nervenklinik:3
+U Lindauer Allee:5
+U Paracelsus-Bad:6
+U Residenzstr.:7
+U Franz-Neumann-Platz:9
+U Osloer Str.:11
+U Pankstr.:12
+S+U Gesundbrunnen:14
+U Voltastr.:15
+U Bernauer Str.:17
+U Rosenthaler Platz:18
+U Weinmeisterstr.:20
+S+U Alexanderplatz:22
+S+U Jannowitzbrücke:23
+U Heinrich-Heine-Str.:25
+U Moritzplatz:26
+U Kottbusser Tor:28
+U Schönleinstr.:30
+U Hermannplatz:32
+U Boddinstr.:33
+U Leinestr.:35
+S+U Hermannstr.:36
+U9
+U Osloer Str.:0
+U Nauener Platz:1
+U Leopoldplatz:2
+U Amrumer Str.:4
+S+U Westhafen:5
+U Birkenstr.:6
+U Turmstr.:8
+U Hansaplatz:9
+S+U Zoologischer Garten:11
+U Kurfürstendamm:13
+U Spichernstr.:14
+U Güntzelstr.:15
+U Berliner Str.:16
+S+U Bundesplatz:18
+U Friedrich-Wilhelm-Platz:19
+U Walther-Schreiber-Platz:20
+U Schloßstr.:22
+S+U Rathaus Steglitz:23

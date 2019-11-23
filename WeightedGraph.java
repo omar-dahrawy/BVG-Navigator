@@ -131,7 +131,6 @@ public class WeightedGraph{
 		return temp;
 	}
 
-
 	public static void main(String[]args) throws FileNotFoundException{
 
 		/*	
@@ -237,10 +236,6 @@ public class WeightedGraph{
 						}
 					}
 				}
-			}
-		}
-		for(int i = 0;i<Stations.getVertices().size();i++) {
-			if(Stations.getVertices().get(i).label.equals("U Amrumer Str.")) {
 			}
 		}
 		BFS(Stations,new Vertex("U Borsigwerke"),new Vertex("U Hermannplatz"));

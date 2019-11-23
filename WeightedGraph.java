@@ -136,9 +136,9 @@ public class WeightedGraph{
 		/*	
 		 * 	READING STATIONS AND CREATING GRAPH OF VERTICES AND EDGES
 		 * 
-		 * 	Creating graph data structure
-		 *  Creating ArrayList of ArrayLists Lines for each U-Bahn line.
-		 * 	Creating ArrayList of ArrayLists Vertices for graph vertices for each U-Bahn line. 
+		 * 	Create graph data structure
+		 *  Create ArrayList of ArrayLists Lines for each U-Bahn line.
+		 * 	Create ArrayList of ArrayLists Vertices for graph vertices for each U-Bahn line. 
 		 * 
 		 */
 
@@ -170,17 +170,17 @@ public class WeightedGraph{
 		int tempOld = 0;
 		String temp = "";
 		while (sc.hasNextLine()){
-			line = sc.nextLine();
-			if(line.length() == 2) {
-				temp = line;
-				Lines.add(new ArrayList<Station>());
+			line = sc.nextLine();													// Read in a line
+			if(line.length() == 2) {												// If line is Ux (x being from 1 to 9)
+				temp = line;														// Save it in temp
+				Lines.add(new ArrayList<Station>()); 								// And create an arraylist inside arraylist Lines for the new U line
 			}
-			else {
-				int index = Integer.parseInt(temp.substring(1, 2));
-				index--;
+			else {																	// otherwise start parsing the line into data
+				int index = Integer.parseInt(temp.substring(1, 2));					// get index of destination arraylist from the Ux line
+				index--;															// i.e. if U1 then index 0
 				for(int i = 0 ; i < line.length() ; i++){
 					if(line.substring(i, i+1).equals(":")){
-						int tempNew = Integer.parseInt(line.substring(i+1));
+						int tempNew = Integer.parseInt(line.substring(i+1));		// create station with name and time and add to Lines
 						int tempResult = tempNew - tempOld;
 						tempOld = Integer.parseInt(line.substring(i+1));
 						Lines.get(index).add(new Station(line.substring(0, i),tempResult));
@@ -190,11 +190,18 @@ public class WeightedGraph{
 		}
 		sc.close();
 
+		/*
+ 		 *	Convert stations in Lines to vertices in Vertices
+		 */
 
 		for(int i = 0 ; i < Lines.size() ; i++) {
 			Vertices.add(addAdjacents(Lines.get(i)));
 		}
 
+		/*
+ 		 *	Add vertices from Vertices to Stations graph
+		 */
+		
 		for(int i = 0 ; i < Vertices.size() ; i++) {
 			for(int j = 0 ; j < Vertices.get(i).size() ; j++) {
 				Stations.addVertex(Vertices.get(i).get(j));

@@ -19,6 +19,6 @@ public class Edge {
 
 	@Override
 	public String toString() {
-		return "Edge [to=" + to + ", weight=" + weight + "]";
+		return to.label ;
 	}
 }

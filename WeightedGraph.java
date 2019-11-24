@@ -15,9 +15,9 @@ import javax.naming.directory.SearchControls;
 public class WeightedGraph{
 
 	public static void main(String[]args) throws FileNotFoundException{
-//		new BFS();
-//		new DFS();
-//		new Greedy();
+		//new BFS();
+		//new DFS();
+		new Greedy();
 	}
 
 }
@@ -38,7 +38,6 @@ class Greedy {
 		ArrayList<VertexG>U3 = new ArrayList<VertexG>();
 		ArrayList<VertexG>U4 = new ArrayList<VertexG>();
 		ArrayList<VertexG>U5 = new ArrayList<VertexG>();
-		ArrayList<VertexG>U55 = new ArrayList<VertexG>();
 		ArrayList<VertexG>U6 = new ArrayList<VertexG>();
 		ArrayList<VertexG>U7 = new ArrayList<VertexG>();
 		ArrayList<VertexG>U8 = new ArrayList<VertexG>();
@@ -51,7 +50,7 @@ class Greedy {
 
 		int size = 0;
 		String temp = " ";
-		 int tempOld = 0;
+		int tempOld = 0;
 		while(sc.hasNextLine()){
 			float x = 0;
 			float y = 0;
@@ -78,10 +77,6 @@ class Greedy {
 				temp = line;
 				tempOld = 0;
 
-			}else if(line.equals("U55")){
-				temp = line;
-				tempOld = 0;
-
 			}else if(line.equals("U6")){
 				temp = line;
 				tempOld = 0;
@@ -102,34 +97,34 @@ class Greedy {
 			if(temp.equals("U1")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
-					
+
 					if(line.substring(i, i+1).equals(":")&&line.substring(i+2, i+3).equals(":")   ){
-							//System.out.println(tempResult);
+						//System.out.println(tempResult);
 						for(int j = i+3;j<line.length();j++){
 							if(line.substring(j,j+1).equals(",")){
 
 								x = Float.parseFloat(line.substring(i+3,j));
 								y = Float.parseFloat(line.substring(j+1,line.length()));
 
-							VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//tempV.time = tempResult;
-						//	System.out.println(tempV.time);
+								VertexG tempV = new VertexG(line.substring(0,i),x,y);
+								//tempV.time = tempResult;
+								//	System.out.println(tempV.time);
 								U1.add(tempV);
 							}
 
@@ -143,11 +138,11 @@ class Greedy {
 
 								x = Float.parseFloat(line.substring(i+4,j));
 								y = Float.parseFloat(line.substring(j+1,line.length()));
-								
+
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
-//								System.out.println(tempV.time);
-									U1.add(tempV);
+								//	tempV.time = tempResult;
+								//								System.out.println(tempV.time);
+								U1.add(tempV);
 							}
 
 						}
@@ -159,20 +154,20 @@ class Greedy {
 			else if(temp.equals("U2")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
 
@@ -185,8 +180,8 @@ class Greedy {
 								y = Float.parseFloat(line.substring(j+1,line.length()));
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
-										
+								//	tempV.time = tempResult;
+
 								U2.add(tempV);
 							}
 
@@ -203,8 +198,8 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
-										
+								//	tempV.time = tempResult;
+
 								U2.add(tempV);
 							}
 
@@ -216,20 +211,20 @@ class Greedy {
 			else if(temp.equals("U3")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
 
@@ -244,8 +239,8 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
-										
+								//	tempV.time = tempResult;
+
 								U3.add(tempV);
 							}
 
@@ -262,8 +257,8 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
-										
+								//	tempV.time = tempResult;
+
 								U3.add(tempV);
 							}
 
@@ -275,20 +270,20 @@ class Greedy {
 			else if(temp.equals("U4")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
 
@@ -303,7 +298,7 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
+								//	tempV.time = tempResult;
 								U4.add(tempV);
 							}
 
@@ -320,7 +315,7 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
+								//	tempV.time = tempResult;
 								U4.add(tempV);
 							}
 
@@ -332,20 +327,20 @@ class Greedy {
 			else if(temp.equals("U5")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
 
@@ -379,63 +374,6 @@ class Greedy {
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
 								//tempV.time = tempResult;
 								U5.add(tempV);
-							}
-
-						}
-
-					}
-				}
-			}
-			else if(temp.equals("U55")){
-				for(int i = 0;i<line.length();i++){
-					int tempResult = 0 ;
-					
-					if(line.substring(i, i+1).equals(":")){
-						if(line.substring(i+2, i+3).equals(":")){
-							//System.out.println(line.substring(i+1,i+2));
-							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
-							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
-						}
-						else if(line.substring(i+3, i+4).equals(":")){
-							
-							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
-							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
-						}
-					}
-
-
-					if(line.substring(i, i+1).equals(":")&&line.substring(i+2, i+3).equals(":")   ){
-
-						for(int j = i+3;j<line.length();j++){
-							if(line.substring(j,j+1).equals(",")){
-
-								x = Float.parseFloat(line.substring(i+3,j));
-								y = Float.parseFloat(line.substring(j+1,line.length()));
-
-
-								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-								//tempV.time = tempResult;
-								U55.add(tempV);
-							}
-
-						}
-
-					}
-					else if (line.substring(i, i+1).equals(":")&&line.substring(i+3, i+4).equals(":")){
-
-						for(int j = i+4;j<line.length();j++){
-							if(line.substring(j,j+1).equals(",")){
-
-								x = Float.parseFloat(line.substring(i+4,j));
-								y = Float.parseFloat(line.substring(j+1,line.length()));
-
-
-								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
-								U55.add(tempV);
 							}
 
 						}
@@ -446,20 +384,20 @@ class Greedy {
 			else if(temp.equals("U6")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
 
@@ -503,20 +441,20 @@ class Greedy {
 			else if(temp.equals("U7")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
 
@@ -559,24 +497,22 @@ class Greedy {
 			else if(temp.equals("U8")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
 							//System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
+
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
 						}
 					}
-
-
 					if(line.substring(i, i+1).equals(":")&&line.substring(i+2, i+3).equals(":")   ){
 
 						for(int j = i+3;j<line.length();j++){
@@ -587,7 +523,7 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
+								//	tempV.time = tempResult;
 								U8.add(tempV);
 							}
 
@@ -604,7 +540,7 @@ class Greedy {
 
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
+								//	tempV.time = tempResult;
 								U8.add(tempV);
 							}
 
@@ -616,22 +552,22 @@ class Greedy {
 			else if(temp.equals("U9")){
 				for(int i = 0;i<line.length();i++){
 					int tempResult = 0 ;
-					
+
 					if(line.substring(i, i+1).equals(":")){
 						if(line.substring(i+2, i+3).equals(":")){
-						//	System.out.println(line.substring(i+1,i+2));
+							//	System.out.println(line.substring(i+1,i+2));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+2));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+2));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+2));
+
 						}
 						else if(line.substring(i+3, i+4).equals(":")){
-							
-						//	System.out.println(line.substring(i+1,i+3));
+
+							//	System.out.println(line.substring(i+1,i+3));
 							int tempNew = Integer.parseInt(line.substring(i+1,i+3));
 							tempResult = tempNew - tempOld;
-			    			tempOld = Integer.parseInt(line.substring(i+1,i+3));
-			    			
+							tempOld = Integer.parseInt(line.substring(i+1,i+3));
+
 						}
 					}
 
@@ -645,7 +581,7 @@ class Greedy {
 								y = Float.parseFloat(line.substring(j+1,line.length()));
 
 								VertexG tempV = new VertexG(line.substring(0,i),x,y);
-							//	tempV.time = tempResult;
+								//	tempV.time = tempResult;
 								//System.out.println(tempV.time);
 								U9.add(tempV);
 							}
@@ -681,7 +617,6 @@ class Greedy {
 		addadjacentsG(Graph,U3);
 		addadjacentsG(Graph,U4);
 		addadjacentsG(Graph,U5);
-		addadjacentsG(Graph,U55);
 		addadjacentsG(Graph,U6);
 		addadjacentsG(Graph,U7);
 		addadjacentsG(Graph,U8);
@@ -689,7 +624,7 @@ class Greedy {
 
 
 		AdjInGraph(Graph);
-		GreedySearch(Graph, "S+U Alexanderplatz" , "U Mendelssohn-Bartholdy-Park");
+		GreedySearch(Graph, "U Cottbusser Platz" , "S+U Frankfurter Allee");
 	}
 
 	public void GreedySearch(ArrayList<VertexG>Graph , String Start , String end ){
@@ -704,33 +639,38 @@ class Greedy {
 
 			if(Graph.get(i).label.equals(Start)){
 				StartV = Graph.get(i);
-				//System.out.println(StartV.adj);
 				visited.add(Start);
-				//Graph.remove(Graph.get(i));
 				break;
 			}
 
 		}
 		boolean flag = true;
+		boolean out = true;
 
 
 		while(flag){
 			ArrayList<Float> h = addHeuristics(StartV);
 			Collections.sort(h);
-			for(int i = 0;i<StartV.adj.size();i++){
-				for(int j = 0;j<h.size();j++){
-					if(StartV.adj.get(i).h == h.get(j)&& !visited.contains(StartV.adj.get(i).label)){
-						System.out.println("StartV.adj.toString()"+ StartV.adj.toString());
-						System.out.println("minimum = "+ StartV.adj.get(i).label);
-						visited.add(StartV.adj.get(i).label);
-						StartV = findV(Graph, StartV.adj.get(i));
-						h.clear();
-						i = 0;
-						break;
+
+			for(int j = 0 ; j < h.size() ; j++){
+				for(int i = 0 ; i < StartV.adj.size(); i++){
+					if(StartV.adj.get(i).h == h.get(j)){
+						if(!visited.contains(StartV.adj.get(i).label)) {
+							System.out.println("Adjacent stations: " + StartV.adj.toString());
+							System.out.println("Expanding: "+ StartV.adj.get(i).toString());
+							System.out.print("\n");
+							visited.add(StartV.adj.get(i).label);
+							StartV = findV(Graph, StartV.adj.get(i));
+							h.clear();
+							i = 0;
+							out = false;
+							break;
+						}
 					}
 
 				}
 			}
+			out = true;
 			if(visited.contains(end)){
 				flag = false;
 			}
@@ -738,11 +678,13 @@ class Greedy {
 			//System.out.println(visited.toString());	
 		}
 
+		System.out.println("Path = " + visited.toString());
+		
 		long endTime = System.nanoTime();
 
 		long duration = (endTime - startTime)/1000000;
 
-		System.out.println(duration);
+		System.out.println("Time taken for search: " + duration + "ms");
 
 
 	}
@@ -753,7 +695,9 @@ class Greedy {
 
 		for(int i = 0;i<StartV.adj.size();i++){
 			if(!visited.contains(StartV.adj.get(i))){
-				heuristic = Math.abs(StartV.x-StartV.adj.get(i).x) + Math.abs(StartV.y-StartV.adj.get(i).y);
+				float dx = Math.abs(StartV.x - StartV.adj.get(i).x);
+				float dy = Math.abs(StartV.y - StartV.adj.get(i).y);
+				heuristic = (float) Math.sqrt(dx*dx + dy*dy);
 				StartV.adj.get(i).h = heuristic;
 				h.add(heuristic);
 			}
@@ -1159,9 +1103,8 @@ class BFS {
 	}
 
 	public void Search(Graph Stations,Vertex start,Vertex end) throws FileNotFoundException {
-
+		long startTime = System.nanoTime();
 		ArrayList<String> visited = new ArrayList<String>();
-		//ArrayList<String> path = new ArrayList<String>();
 		ArrayList<Vertex> vTemp = Stations.getVertices();
 		ArrayList<String> e = new ArrayList<String>();
 		for(int i = 0 ; i<vTemp.size() ; i++){
@@ -1170,34 +1113,42 @@ class BFS {
 				for(int j = 0;j<vTemp.get(i).getEdges().size();j++){
 					if(vTemp.get(i).getEdges().size() >0){
 						e.add(vTemp.get(i).getEdges().get(j).getTo().label);
-						//	System.out.println(vTemp.get(i).getEdges().get(j).getTo().label);
 					}
 				}
 				break;
 			}
 		}
-		//	System.out.println(e.toString());
+		System.out.println("Adjacent stations: "+ e.toString());
 		visited.add(start.label);
+		System.out.println("Expanding: " + start.label);
 		int no = 0;
 		for(int i = 0; i< e.size();i++){
 			if(e.contains(end.label)){
-				//System.out.println(e.get(i));
 				break;
 			}
-			for(int j = 0 ;j< Stations.getVertices().size();j++){
+			for(int j = 0 ; j < Stations.getVertices().size() ; j++){
 				if(e.get(i).equals(Stations.getVertices().get(j).label)){
+					
 					for(int x = 0;x<Stations.getVertices().get(j).edges.size();x++){
 						if(!visited.contains(Stations.getVertices().get(j).edges.get(x).getTo().label)){
 							e.add(Stations.getVertices().get(j).edges.get(x).getTo().label);
 							visited.add(Stations.getVertices().get(j).edges.get(x).getTo().label);
-							//System.out.println(Stations.getVertices().get(j));
-
+							System.out.println("Adjacent stations: " + Stations.getVertices().get(j).edges.toString());
+							System.out.println("Expanding: " + Stations.getVertices().get(j).edges.get(x).getTo().label);
 						}
 					}
 				}
 			}
 		}
-		System.out.println(e.toString());
+		System.out.println("Path of search: " + visited.toString());
+		
+		long endTime = System.nanoTime();
+
+		long duration = (endTime - startTime)/1000000;
+
+		System.out.println("Time taken for search: " + duration + "ms");
+
+
 	}
 
 	public static ArrayList<Vertex> addAdjacents(ArrayList<Station> x){

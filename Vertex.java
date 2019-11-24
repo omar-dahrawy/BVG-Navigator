@@ -29,7 +29,7 @@ class Vertex {
 
 	@Override
 	public String toString() {
-		return "Vertex [label = " + label + ", edges=" + edges + "]";
+		return label ;
 	}
 }
 

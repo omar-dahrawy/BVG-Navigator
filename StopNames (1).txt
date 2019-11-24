@@ -94,10 +94,6 @@ U Weberwiese:28:52.5166,13.4432
 U Strausberger Platz:29:52.5181,13.4317
 U Schillingstr.:31:52.5208,13.4210
 S+U Alexanderplatz:32:52.5204,13.4144
-U55
-S+U Brandenburger Tor:0:52.5165,13.3817
-U Bundestag:1:52.5202,13.3730
-S+U Hauptbahnhof:2:52.5248,13.3697
 U6
 U Alt-Tegel:0:52.5895,13.2837
 U Borsigwerke:1:52.5829,13.2896

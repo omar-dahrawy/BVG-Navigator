@@ -30,6 +30,6 @@ public class VertexG {
 	}
 	@Override
 	public String toString() {
-		return "VertexT [label=" + label + ", x=" + x + ", y=" + y + ", h=" + h	+  "]";
+		return label + ", h = " + h;
 	}
 }

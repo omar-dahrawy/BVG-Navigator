@@ -7,34 +7,29 @@ import java.util.Set;
 
 class Vertex { 
 
-   public String label;
-   
-
+	public String label;
 	public ArrayList<Edge> edges; //collection of edges to neighbors 
 
-    public Vertex(String pageObject) {
-        this.label = pageObject;
-        this.edges = new ArrayList<Edge>();
-    }
+	public Vertex(String string) {
+		this.label = string;
+		this.edges = new ArrayList<Edge>();
+	}
 
-    String getLabel() {
-        return label;
-    }
+	String getLabel() {
+		return label;
+	}
 
-    boolean addEdge(Edge edge){
-        return edges.add(edge);
-    }
+	boolean addEdge(Edge edge){
+		return edges.add(edge);
+	}
 
-    List<Edge> getEdges() {
-        return new ArrayList<>(edges);
-    }
-    
-    @Override
-    public String toString() {
-    	
-    		return "Vertex [label=" + label + ", edges=" + edges + "]";
-    }
+	ArrayList<Edge> getEdges() {
+		return new ArrayList<>(edges);
+	}
 
-    //todo override hashCode()
+	@Override
+	public String toString() {
+		return "Vertex [label = " + label + ", edges=" + edges + "]";
+	}
 }
 
